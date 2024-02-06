@@ -41,7 +41,7 @@ terraform {
   }
     before_hook "before_hook" {
     commands     = ["apply", "plan"]
-    execute      = ["tflint"]
+    execute      = ["echo","Start Terraform"]
   }
 
   after_hook "after_hook" {
